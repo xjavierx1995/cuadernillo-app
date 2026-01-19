@@ -12,10 +12,10 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          Cuadernillo App
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>Disfruta tu desarrollo</div>
       </q-toolbar>
     </q-header>
 
@@ -28,7 +28,7 @@
         <q-item-label
           header
         >
-          Essential Links
+          Navegación
         </q-item-label>
 
         <EssentialLink
@@ -40,7 +40,9 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view />
+      <div class="container">
+        <router-view />
+      </div>
     </q-page-container>
   </q-layout>
 </template>
@@ -51,47 +53,17 @@ import EssentialLink, { type EssentialLinkProps } from 'components/EssentialLink
 
 const linksList: EssentialLinkProps[] = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
+    title: 'Inicio',
+    caption: '¡Completa los ejercicios paso a paso!',
     icon: 'school',
-    link: 'https://quasar.dev'
+    linkName: 'index'
   },
   {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
+    title: 'Completar Ejercicios',
+    caption: 'Genera palabras para completar tus ejercicios',
     icon: 'code',
-    link: 'https://github.com/quasarframework'
+    linkName: 'words-completion'
   },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
 ];
 
 const leftDrawerOpen = ref(false);
@@ -100,3 +72,9 @@ function toggleLeftDrawer () {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 }
 </script>
+<style scoped>
+.container {
+  padding: 16px;
+}
+
+</style>
