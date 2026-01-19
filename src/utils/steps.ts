@@ -13,7 +13,8 @@ export const STEPS: StepI[] = [
         completeWord: 'Welcome',
         incompleteWord: 'Wel_ome',
         sugestions: ['c', 'd', 'l'],
-        completed: false
+        completed: false,
+        imageUrl: 'https://example.com/welcome-image.jpg'
       },
       {
         id: 'word-2',

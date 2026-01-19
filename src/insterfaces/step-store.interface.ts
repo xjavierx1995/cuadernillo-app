@@ -1,5 +1,7 @@
 export interface StepsStoreInterface {
   steps: StepI[];
+  selectedStep: StepI | null;
+  selectedPage: number;
 }
 
 export interface StepI {
@@ -17,4 +19,5 @@ export interface WordI {
   incompleteWord: string;
   sugestions: string[];
   completed: boolean;
+  imageUrl?: string;
 }
