@@ -7,7 +7,7 @@
       bordered
     >
       <q-card-section class="col-5 flex flex-center">
-        <q-img
+        <img
           class="rounded-borders word-image"
           :src="props.word.imageUrl"
         />
