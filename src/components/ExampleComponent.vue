@@ -1,14 +1,8 @@
 <template>
   <div>
-    <p>{{ title }}</p>
-    <ul>
-      <li v-for="todo in todos" :key="todo.id" @click="increment">
-        {{ todo.id }} - {{ todo.content }}
-      </li>
-    </ul>
-    <p>Count: {{ todoCount }} / {{ meta.totalCount }}</p>
-    <p>Active: {{ active ? 'yes' : 'no' }}</p>
-    <p>Clicks on todos: {{ clickCount }}</p>
+    <img src="https://play-lh.googleusercontent.com/jynQCM2vWkn32uIC3AN5i17xpuHuIhbP50OS8vs4v1XxDAfwXLc_NJPIRbbQFeQkWg" alt="lgo">
+    <h4 class="q-ma-none">Bienvenido a cuadernillo app</h4>
+    <h6 class="q-ma-none">Navega por nuestro cuadernillo para aprender y practicar.</h6>
   </div>
 </template>
 

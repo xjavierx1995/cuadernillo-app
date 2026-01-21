@@ -20,4 +20,5 @@ export interface WordI {
   sugestions: string[];
   completed: boolean;
   imageUrl?: string;
+  answer: string;
 }
